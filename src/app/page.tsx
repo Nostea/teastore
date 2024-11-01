@@ -1,16 +1,20 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { defineQuery } from "next-sanity";
+import { defineQuery } from 'next-sanity'
 
-import { client } from "@/sanity/client";
+import { sanityClient } from '@/sanity/client'
+import Categories from './ui/categories'
 
-const options = { next: { revalidate: 60 } };
+const options = { next: { revalidate: 60 } }
 
 export default function Home() {
     return (
-        <div className=" bg-slate-200 min-h-screen p-8 pb-20 ">
+        <div className=" bg-slate-200 min-h-screen pb-20 ">
             <main className="flex flex-col gap-8 row-start-2 items-center mb-8">
+                <Categories />
                 <p>Hello</p>
                 <p>I am groot</p>
             </main>
