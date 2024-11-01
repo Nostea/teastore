@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
+import NavbarM from './ui/navbarM'
 
 export const metadata: Metadata = {
     title: 'Teavana Store',
@@ -14,7 +15,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`antialiased`}>{children}</body>
+            <body className={`antialiased`}>
+                <NavbarM />
+                {children}
+            </body>
         </html>
     )
 }

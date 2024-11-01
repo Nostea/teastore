@@ -5,7 +5,7 @@ dotenv.config()
 
 const mySanityProjectId = process.env.SANITY_PROJECT_ID
 
-export const client = createClient({
+export const sanityClient = createClient({
     projectId: mySanityProjectId,
     dataset: 'production',
     apiVersion: '2024-01-01',
