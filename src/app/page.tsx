@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { defineQuery } from 'next-sanity'
 
 import { sanityClient } from '@/sanity/client'
-import Categories from './ui/categories'
+import Categories from './components/ui/categories'
 
 const options = { next: { revalidate: 60 } }
 
