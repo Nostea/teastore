@@ -3,6 +3,7 @@ import localFont from 'next/font/local'
 import './globals.css'
 import NavbarM from './components/ui/navbarM'
 import ShopPerks from './components/ui/shopPerks'
+import Footer from './components/ui/footer'
 
 export const metadata: Metadata = {
     title: 'Teavana Store',
@@ -20,6 +21,7 @@ export default function RootLayout({
                 <NavbarM />
                 {children}
                 <ShopPerks />
+                <Footer />
             </body>
         </html>
     )
