@@ -1,5 +1,6 @@
 'use client'
 import Link from 'next/link'
+import ShoppingCart from './shoppingCart'
 
 export default function NavbarM() {
     return (
@@ -22,9 +23,7 @@ export default function NavbarM() {
                 <Link className="hover:text-purple-400" href="/">
                     Acc
                 </Link>
-                <Link className="hover:text-purple-400" href="/">
-                    Cart
-                </Link>
+                <ShoppingCart />
             </div>
         </nav>
     )
