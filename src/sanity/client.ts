@@ -1,9 +1,10 @@
 import { createClient } from 'next-sanity'
-import dotenv from 'dotenv'
-
-dotenv.config()
 
 const mySanityProjectId = process.env.SANITY_PROJECT_ID
+
+if (!mySanityProjectId) {
+    throw new Error('Missing SANITY_PROJECT_ID in environment variables.')
+}
 
 export const sanityClient = createClient({
     projectId: mySanityProjectId,
