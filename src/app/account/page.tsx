@@ -4,7 +4,7 @@ import Image from 'next/image'
 import DropdownItem from '../components/dropdownItem'
 import Faq from '../components/faq'
 
-export default function LoginPage() {
+export default function AccountPage() {
     return (
         <div className="flex flex-col my-6 mx-4">
             <section className="flex flex-col mb-6" data-cy="account-section">
@@ -15,7 +15,7 @@ export default function LoginPage() {
                     <input type="password" name="password" id="login-password" placeholder="Password" />
                     <button type="button">Login</button>
                 </form>
-                <p>
+                <p className="flex flex-row gap-1">
                     You're not registered yet?
                     <Link href="/" className=" underline">
                         Register here
