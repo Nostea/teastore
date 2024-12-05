@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
 import NewsletterForm from './newsletterForm'
+import Image from 'next/image'
 
 export default function Footer() {
     return (
@@ -25,10 +26,12 @@ export default function Footer() {
                         <div data-cy="social" className="pb-6">
                             <h3>Social Media</h3>
                             <div className="flex flex-row gap-4">
-                                <span>1</span>
-                                <span>1</span>
-                                <span>1</span>
-                                <span>1</span>
+                                <img src="/facebook-f-brands-solid.svg" alt="facebook" className="h-4" />
+                                <img src="/pinterest-p-brands-solid.svg" alt="pinterest" className="h-4" />
+                                <img src="/instagram-brands-solid.svg" alt="instagram" className="h-4" />
+                                <img src="/vimeo-v-brands-solid.svg" alt="vimeo" className="h-4" />
+                                <img src="/youtube-brands-solid.svg" alt="youtube" className="h-4" />
+                                <img src="/linkedin-in-brands-solid.svg" alt="linkedin" className="h-4" />
                             </div>
                         </div>
                         <div data-cy="payment" className="pb-6">
