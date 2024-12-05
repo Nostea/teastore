@@ -1,7 +1,5 @@
 'use client'
 import Link from 'next/link'
-import Image from 'next/image'
-import DropdownItem from '../components/dropdownItem'
 import Faq from '../components/faq'
 
 export default function AccountPage() {
@@ -13,7 +11,9 @@ export default function AccountPage() {
                 <form action="" data-cy="login-form">
                     <input type="email" name="email" id="login-email" placeholder="Email" />
                     <input type="password" name="password" id="login-password" placeholder="Password" />
-                    <button type="button">Login</button>
+                    <button type="button" className="button-solid">
+                        Login
+                    </button>
                 </form>
                 <p className="flex flex-row gap-1">
                     You're not registered yet?

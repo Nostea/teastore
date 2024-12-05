@@ -8,7 +8,7 @@ export default function Favorites() {
 
             <p className="text-center">Your wishlist is empty</p>
 
-            <button type="button">
+            <button type="button" className="button-outline">
                 <Link href="/">Discover our products</Link>
             </button>
         </section>

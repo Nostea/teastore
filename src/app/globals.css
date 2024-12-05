@@ -29,9 +29,14 @@
         @apply border-2 border-none w-full px-6 py-4 mb-2 bg-slate-100;
     }
 
-    button {
+    .button-outline {
         @apply border-[1px] w-full border-solid border-black px-6 py-4 mb-2;
     }
+
+    .button-solid {
+        @apply border-none w-full bg-black px-6 py-4 mb-2 text-white;
+    }
+
     :root {
         --background: 0 0% 100%;
 

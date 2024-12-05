@@ -21,7 +21,9 @@ export default function ShoppingCart() {
 
                     <CartProductCard />
 
-                    <button type="button">Buy</button>
+                    <button type="button" className="button-solid">
+                        Buy
+                    </button>
                 </div>
             </SheetContent>
         </Sheet>

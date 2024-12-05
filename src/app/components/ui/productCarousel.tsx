@@ -42,7 +42,9 @@ export default function ProductCarousel() {
                 />
             </div>
             <button>
-                <Link href="/">Discover more</Link>
+                <Link href="/" className="button-outline">
+                    Discover more
+                </Link>
             </button>
         </section>
     )
