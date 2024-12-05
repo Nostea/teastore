@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
 import ShoppingCart from './shoppingCart'
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
 
 export default function NavbarM() {
     return (
@@ -11,11 +12,27 @@ export default function NavbarM() {
                         <path d="M160-269.23v-40h640v40H160ZM160-460v-40h640v40H160Zm0-190.77v-40h640v40H160Z" />
                     </svg>
                 </Link>
-                <Link className="hover:text-purple-400" href="/" data-cy="search-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-                        <path d="M779.38-153.85 528.92-404.31q-30 25.54-69 39.54t-78.38 14q-96.1 0-162.67-66.53-66.56-66.53-66.56-162.57 0-96.05 66.53-162.71 66.53-66.65 162.57-66.65 96.05 0 162.71 66.56Q610.77-676.1 610.77-580q0 41.69-14.77 80.69t-38.77 66.69l250.46 250.47-28.31 28.3ZM381.54-390.77q79.61 0 134.42-54.81 54.81-54.8 54.81-134.42 0-79.62-54.81-134.42-54.81-54.81-134.42-54.81-79.62 0-134.42 54.81-54.81 54.8-54.81 134.42 0 79.62 54.81 134.42 54.8 54.81 134.42 54.81Z" />
-                    </svg>
-                </Link>
+
+                <Sheet data-cy="search-button">
+                    <SheetTrigger className="border-0 p-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                            <path d="M779.38-153.85 528.92-404.31q-30 25.54-69 39.54t-78.38 14q-96.1 0-162.67-66.53-66.56-66.53-66.56-162.57 0-96.05 66.53-162.71 66.53-66.65 162.57-66.65 96.05 0 162.71 66.56Q610.77-676.1 610.77-580q0 41.69-14.77 80.69t-38.77 66.69l250.46 250.47-28.31 28.3ZM381.54-390.77q79.61 0 134.42-54.81 54.81-54.8 54.81-134.42 0-79.62-54.81-134.42-54.81-54.81-134.42-54.81-79.62 0-134.42 54.81-54.81 54.8-54.81 134.42 0 79.62 54.81 134.42 54.8 54.81 134.42 54.81Z" />
+                        </svg>
+                    </SheetTrigger>
+                    <SheetContent side="left">
+                        <SheetHeader className="flex flex-row gap-1 items-center mb-6">
+                            <img src="/search_24.svg" alt="search" />
+                            <input type="text" name="search-input" id="search-input" className=" bg-white px-2 py-1" placeholder="What are you looking for?" />
+                        </SheetHeader>
+
+                        <div className="flex flex-col gap-4">
+                            <Link href="/">Tea</Link>
+                            <Link href="/">Accessories</Link>
+                            <Link href="/">Sale</Link>
+                            <Link href="/">Discover</Link>
+                        </div>
+                    </SheetContent>
+                </Sheet>
             </div>
             <Link href="/" className=" text-3xl uppercase font-bold">
                 Teavana
